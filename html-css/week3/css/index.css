@@ -1,0 +1,296 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    font-size: 1em;
+    align-content: center;
+}
+
+form {
+    width: 100%;
+}
+
+.progressBarLabel {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.progressBar{
+    background-color: white;
+    display: flex;
+    width:100%;
+    height:40px;
+    border:1px solid black;
+    border-radius: 15px;
+    padding:0px;
+}
+
+.meter{
+    background-image: linear-gradient(to bottom right, gray, white);
+    border: 1px gray solid;
+    border-radius: 15px;
+    height:100%;
+}
+
+.step1-animation{
+    width:25%;
+    animation: step1-keyframes 3s ease-in-out;
+}
+
+.step2-animation{
+    width:50%;
+    animation: step2-keyframes 3s ease-in-out;
+}
+
+.step3-animation{
+    width:75%;
+    animation: step3-keyframes 3s ease-in-out;
+}
+
+.step4-animation{
+    width:100%;
+    animation: step4-keyframes 3s ease-in-out;
+}
+
+.checkMark{
+    color: green;
+    animation: checkmark-keyframes 3s linear;
+}
+
+@keyframes step1-keyframes {
+    0% { width: 0%; }
+    100% { width: 25%; }
+}
+
+@keyframes step2-keyframes {
+    0% { width: 25%; }
+    100% { width: 50%; }
+}
+
+@keyframes step3-keyframes {
+    0% { width: 50%; }
+    100% { width: 75%; }
+}
+
+@keyframes step4-keyframes {
+    0% { width: 75%; }
+    100% { width: 100%; }
+}
+
+@keyframes checkmark-keyframes{
+    0% {visibility:hidden}
+    99% {visibility:hidden}
+    100% {visibility:visible}
+}
+
+.formBodyContainer{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    padding:5px;
+}
+
+.formBody{
+    background-color: #ff670f;
+    display:flex;
+    width:90%;
+    border:1px solid gray;
+    border-radius: 12px;
+    padding:50px;
+    
+}
+
+.justify-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fcdfd9;
+    border: red solid 1px;
+}
+
+.headerContainer {
+    padding:5px;
+}
+
+.header-column-right{
+    height:50px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: royalblue;
+}
+
+.header-column-left{
+    height:50px;
+    width: 50px;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100%;
+}
+
+button {
+    background-image: linear-gradient(to bottom right, coral, crimson);
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width:100%;
+    height: 60px;
+}
+  
+button:hover {
+    background-image: none;
+    background-color: coral;
+}
+
+.sign-up{
+    padding: 80px, 40%;
+}
+
+.progress{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.pro-bar {
+    height:24px;
+    width:20%;
+    background-color: cadetblue;
+}
+
+.info-container {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.offerContainer{
+    display:flex;
+    width:70%;
+}
+
+.info-col-left{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-align: right;
+}
+
+.info-col-right{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-align: right;
+}
+
+.info{
+    width: 100%;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.info-box {
+    height: 50px;
+    width: 60%;
+}
+
+.profile-container {
+    display: flex;
+    width:100%;
+    padding-top: 50px;
+}
+
+.profile {
+    width: 20%;
+    padding-right: 5px;
+}
+
+.profile > p {
+    font-weight: 30;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.description { 
+    width: 80%;
+    padding-right: 20px;
+}
+
+.description >textarea {
+    width: 100%;
+    height: 150px;
+    align-self: flex-start;
+}
+
+.next-step {
+    width: 200px;
+    display: flex;
+    padding-top: 50px;
+    float:right;
+}
+
+.request {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+input:checked + div.deliveryAddress{
+    display:none;
+}
+
+.deliveryAddress{
+    display: block;
+}
+
+.radioLabel{
+    padding-right: 20px;
+}
+
+.checkbox {
+    padding-right: 20px;
+}
+
+.design-selection {
+    flex: 1;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.completedContainer{
+    width:100%;
+}
+
+.completed{
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
+    .formBodyContainer {
+        font-size: small;
+    }
+    .header-column-right {
+       font-size: smaller;
+       flex-direction:column;
+    }
+}
+
+
