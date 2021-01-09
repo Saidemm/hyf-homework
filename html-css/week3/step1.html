@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Your custom tailor</title>
+    </head>
+    <body>
+        <div class="justify-container headerContainer">
+            <div class="header-column-left">
+                <img class="logo" src="img/logo.png" alt="a red circle">
+            </div>
+            <div class="header-column-right">
+                <span class="nav">
+                    Home
+                </span>
+                <span class="nav">
+                    Contact Us
+                </span>
+            </div>
+        </div>
+        <div class="formBodyContainer">
+            <div class="formBody">
+                <form action="step2.html" method="POST">
+                    <div class="sign-up">
+                        <h1 class="text1">Sign up to your customtailor.com</h1>
+                        <p class="text2">We can't wait to improve your life style and gain the attention from people around you!</p>
+                        <p class="text3">Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy picking<br>
+                            the best offers that match your prefferences and style. </p>
+                        <h2 class="text1">Step 1/3-tell us who you are?</h2>
+                    </div>
+                    <div class="progressBarLabel">
+                        Progress
+                    </div>
+                    <div class="progressBar">
+                        <div class="meter step1-animation"></div>
+                    </div>
+                    <div class="request">Nice to meet you. Let's spend a minute to get to know each other? Please enter the following:</div>
+                    <div class="info-container">
+                        <div class="info-col-left">
+                            <div class="info">
+                                <label for="first-name">First Name*</label>
+                                <input
+                                class="info-box"
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                required
+                                />
+                            </div> 
+                            <div class="info">
+                                <label for="country">Country</label>
+                                <select class="info-box" name="country" id="country" required>
+                                    <option value="0"  selected="selected">Choose Country</option>
+                                    <option value="1">Denmark</option>
+                                    <option value="2">Finland</option>
+                                    <option value="3">Norway</option>
+                                    <option value="4">Sweden</option>
+                                </select>
+                            </div>
+                            <div class="info">
+                                <label for="street-address">Street-address*</label>
+                                <input
+                                class="info-box"
+                                type="text"
+                                id="street-address"
+                                name="street-address"
+                                required
+                                />
+                            </div>
+                        </div>
+                        <div class="info-col-right">
+                            <div class="info">
+                                <label for="last-name">Last Name*</label>
+                                <input
+                                class="info-box"
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                required
+                                />
+                            </div> 
+                            <div class="info">
+                                <label for="post-code">Post-code*</label>
+                                <input
+                                class="info-box"
+                                type="text"
+                                id="post-code"
+                                name="post-code"
+                                required
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-container">
+                        <div class="profile">
+                            <h3>Profile description</h3>
+                            <p>Please provide a short description of yourself to be displayed on our social community page.</p>
+                        </div>
+                        <div class="description">
+                            <textarea id="description" name="description" ></textarea>
+                        </div>
+                    </div>
+                    <div class="request">
+                        Use the same address for billing and shipping?
+                        Uncheck bellow to fill out a separate shipping address. 
+                    </div>
+                    <div>
+                        <label for="shipping">Shipping address</label>
+                        <input type="checkbox" name="shipping" id="shipping" class="shippingSame" checked>
+                        <div class="info-container deliveryAddress">
+                            <div class="info-col-left">
+                                <div class="info">
+                                    <label for="street-address">Street-address*</label>
+                                    <input
+                                    class="info-box"
+                                    type="text"
+                                    id="delivery-street-address"
+                                    name="delivery-street-address"
+                                    />
+                                </div>
+                            </div>
+                            <div class="info-col-right"> 
+                                <div class="info">
+                                    <label for="post-code">Post-code*</label>
+                                    <input
+                                    class="info-box"
+                                    type="text"
+                                    id="delivery-post-code"
+                                    name="delivery-post-code"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-step">
+                        <button type="submit">Next Step</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
