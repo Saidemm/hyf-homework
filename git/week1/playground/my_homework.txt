@@ -1,0 +1,1 @@
+The :checked pseudo-class in CSS selects elements when they are in the selected state. It is only associated with input (<input>) elements of type radio and checkbox . The :checked pseudo-class selector matches radio and checkbox input types when checked or toggled to an on state. If they are not selected or checked, there is no match.
