@@ -4,8 +4,8 @@ const firstWords = ["Easy", "Awsome", "Evolutionary", "Approachable", "Creative"
 const secondWords = ["Company", "Innovation", "Factory", "Corporation", "World", "House", "Future", "Future Planners", "Dream", "Business"];
 
 
-const randomFirstWordIndex = Math.floor(Math.random() * 10) + 0;
-const randomSecondWordIndex = Math.floor(Math.random() * 10) + 0;
+const randomFirstWordIndex = Math.floor(Math.random() * firstWords.length);
+const randomSecondWordIndex = Math.floor(Math.random() * secondWords.length);
 
 let newStartUpName = firstWords[randomFirstWordIndex] + " " + secondWords[randomSecondWordIndex];
 console.log("The startup: \"" + newStartUpName + "\" contains " + newStartUpName.length + " characters.");
