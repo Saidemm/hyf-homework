@@ -2,7 +2,7 @@
 function getEventWeekday(dayFromToday) {
     let now = new Date();
     let todayIndex = now.getDay();
-    return "The event is being held on " + weekDays[dayFromToday % 7 + todayIndex] + ".";
+    return "The event is being held on " + weekDays[(dayFromToday % 7 + todayIndex) % 7] + ".";
 }
 
 
