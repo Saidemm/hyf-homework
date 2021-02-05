@@ -1,4 +1,4 @@
-/*function bookPlaneTickets() {
+function bookPlaneTickets() {
     console.log("[34,27,2]", new Error().stack);
     console.log('Plane tickets booked');
     requestVacationDays();
@@ -33,7 +33,7 @@ function planTrip() {
 console.log("[33]", new Error().stack);
 planTrip();
 console.log("[35]", new Error().stack);
-*/
+
 
 /*
 const person ={
