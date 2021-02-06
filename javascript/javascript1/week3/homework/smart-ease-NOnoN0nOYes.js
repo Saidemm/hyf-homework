@@ -53,8 +53,8 @@ console.log(firstNote);
 //Log out notes
 
 function logOutNotesFormatted() {
-    for (let i = 0; i < notes.length; i++) {
-        console.log(`The note with id: ${notes[i].id} ,has the following note text: ${notes[i].content}`);
+    for (let note of notes) {
+        console.log(`The note with id: ${note.id} ,has the following note text: ${note.content}`);
     }
 };
 

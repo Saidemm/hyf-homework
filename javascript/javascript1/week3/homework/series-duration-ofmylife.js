@@ -26,7 +26,7 @@ function logOutSeriesText() {
 
     for(let i = 0; i < seriesDurations.length; i++){
         if (seriesDurations[i] == null) {
-            console.log("Error!");
+            console.log("Please add some series informations.");
         }
         else {
             let seriesDurationInMinutes = (seriesDurations[i].days * 1440 + seriesDurations[i].hours * 60) + seriesDurations[i].minutes;
