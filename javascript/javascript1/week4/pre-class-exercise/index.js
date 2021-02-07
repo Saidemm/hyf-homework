@@ -1,20 +1,50 @@
-fizzBuzzArrey = [];
-function getFizzBuzz(){
+const fizzBuzzArrey = [];
+function getFizzBuzz(firstInput, secondInput){
     for(let i = 1; i < 100; i++){
-        //let remainderFizz = i % 3;
-        if ((i%3)==0) {
+        let added = false;
+        if (i % firstInput == 0) {
+            added = true;
             fizzBuzzArrey.push("fizz");
         }
-        else if((i%5)==0){
+        if(i % secondInput == 0){
+            added = true;
             fizzBuzzArrey.push("buzz");
         }
-        else if((i%3)&&(i%5) == 0){
-            fizzBuzzArrey.push("fizzBuzz");
+        if(i % firstInput == 0 && i% secondInput == 0){
+            added = true;
+            fizzBuzzArrey.push("fizzBuzz"); 
         }
-        else {
+        if(!added){
             fizzBuzzArrey.push(i); 
         }
     }
 }
-getFizzBuzz();
+getFizzBuzz(4, 12);
 console.log(fizzBuzzArrey);
+
+
+
+
+// Second Exercise
+const positiveWords = ['happy', 'awesome', 'super'];
+const negativeWords = ['boring', 'hate', 'bad'];
+
+function getSentimentScore(str) {
+
+}
+
+
+
+
+
+
+const sentimentScoreObject = getSentimentScore('I am mega super awesome happy');
+
+console.log(sentimentScoreObject); 
+/*
+{
+  score: 3,
+ 
+  negativeWords: [],
+}
+*/
