@@ -44,8 +44,8 @@ function replyToHello(command){
 }
 
 function replyWithLastSavedName(){
-    if (namesList == null) {
-        console.log("You haven't told me your name yet");  
+    if (namesList.length == 0) {
+        console.log("You haven't told me your name yet!");  
         return;
     }
     else {
@@ -121,7 +121,18 @@ function getTodayFormattedDate() {
 function doSimpleMath(command){
     const simpleMath = command.slice(7).trim();
     if(validMathExpression(simpleMath)){ // For security reasons we should validate first
-        console.log(new Function("return " + simpleMath + ";")());
+        try{
+            const calcResult = new Function("return " + simpleMath + ";")();
+            if(isNaN(calcResult)){
+                console.log("Invalid matth problem!");
+            }
+            else{
+                console.log("It is: ", calcResult);
+            }
+        }
+        catch(e){
+            console.log("Invalid matth problem!");
+        }
     }
 }
 
@@ -163,6 +174,7 @@ getReply("What's on my todo?");
 getReply("What day is it today?");
 
 getReply("what is malicious-code");
+getReply("what is 3 +");
 getReply("what is 3 + 3");
 getReply("what is 4 * 12"); 
 getReply("what is 4 * 12 * 30"); 
@@ -170,3 +182,4 @@ getReply("what is 4 * 12 / 20");
 
 getReply("Set a timer for 4 minutes");
 getReply("Set a timer for 6 minutes");
+
