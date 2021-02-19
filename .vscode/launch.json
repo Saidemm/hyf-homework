@@ -8,7 +8,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "pwa-chrome",
-            "file": "c:\\Users\\saeed_000\\Desktop\\hyf-homework\\javascript\\javascript1"
+            "file": "c:\\Users\\saeed_000\\Desktop\\hyf-homework\\javascript"
         }
     ]
 }
