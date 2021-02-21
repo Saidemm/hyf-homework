@@ -3,9 +3,10 @@ console.log("Script loaded");
 const products = getAvailableProducts();
 console.log(products);
 
+const productList = document.querySelector("ul");
+
 function renderProducts(products) {
     // your code here
-    const productList = document.querySelector("ul");
     products.forEach(product => {
         let li = document.createElement("li");
         let title = document.createElement("h2");

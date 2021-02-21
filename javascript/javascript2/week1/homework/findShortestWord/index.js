@@ -1,19 +1,19 @@
 //Find the shortest word 
 const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
-function getShorterWord(danishWords){ 
+function getShorterWord(danishWords) {
     const lengthOfDanishWords = [];
     danishWords.forEach(word => {
-    lengthOfDanishWords.push(word.length)
-});
+        lengthOfDanishWords.push(word.length)
+    });
     let shorterDanishWord = Math.min.apply(Math, lengthOfDanishWords);
     danishWords.forEach(word => {
-       if (word.length == shorterDanishWord){
-        console.log(`Shortest Danish word : ${word}`);
-       }
+        if (word.length == shorterDanishWord) {
+            console.log(`Shortest Danish word : ${word}`);
+        }
     });
 
 };
-getShorterWord(danishWords); 
+getShorterWord(danishWords);
 
 
 //This program finds and counts the Danish letters
@@ -27,13 +27,13 @@ function numbersOfDanishLetters(danishString) {
 
     let info = {};
     info.total = totalnumOfdanishLetters;
-    if(numberOfå!=0){
+    if (numberOfå != 0) {
         info["å"] = numberOfå;
     }
-    if(numberOfæ!=0){
+    if (numberOfæ != 0) {
         info["æ"] = numberOfæ;
     }
-    if(numberOfø!=0){
+    if (numberOfø != 0) {
         info["ø"] = numberOfø;
     }
     return info;

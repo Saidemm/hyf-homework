@@ -1,7 +1,18 @@
 //Spirit animal name generator
 
-const spiritAnimal = ["The curious cat", "The confident deer", "The courageous lion", "The fullmoon wolf", "The loyal dog", "The wise owl", "The compassionate hawk", "The intelligent fox", "The crying butterfly", "The quick rabbit", ]
 
+const spiritAnimal = [
+    "The curious cat",
+    "The confident deer",
+    "The courageous lion",
+    "The fullmoon wolf",
+    "The loyal dog",
+    "The wise owl",
+    "The compassionate hawk",
+    "The intelligent fox",
+    "The crying butterfly",
+    "The quick rabbit", 
+    ];
 const userNameElement = document.getElementById("userName");
 const resultText = document.getElementById("resultName");
 const magicButton = document.querySelector("#spiritButton");
