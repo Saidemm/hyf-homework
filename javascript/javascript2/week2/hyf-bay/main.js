@@ -46,9 +46,9 @@ function searchingForMaximumPrices(inputProducts) {
 
 function getPremiumProduct(inputProducts){
     if (premiumBoxText.checked) {
-    return inputProducts.filter(product => product.price > 5000 && product.rating > 6);
+        return inputProducts.filter(product => product.price > 5000 && product.rating > 6);
     } else {
-    return inputProducts;   
+        return inputProducts;   
     }
 }
 
@@ -86,4 +86,3 @@ sortingSelectorElement.addEventListener('change', searchAndSort);
 // Extra feature
 const premiumBoxText = document.getElementById("premiumProducts");
 premiumBoxText.addEventListener('change', searchAndSort);
-
