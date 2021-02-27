@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HyfBay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,800"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="logo-container">
+        <img src="img/logo.jpg" alt="Smart Shop">
+      </div>
+      <div class="menu">
+        <div class="menu-left">
+          Smart-Shopping.com
+        </div>  
+        <div class="menu-right">
+        </div>
+      </div>
+      <main>
+        <div class="formBody">
+          <div class="formLeftCol">
+            <label for="productName">Search for product here: </label>
+            <input type="text" id="productName" name="productName"><br>
+            <label for="maximumPrice">Set maximum price: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="text" id="maximumPrice" name="maximumPrice"><br>
+            <input type="checkbox" id="premiumProducts" name="premiumProducts">
+            <label for="premiumProducts">Show premium products</label> 
+          </div>
+          <div class="formRightCol">
+            <label for="sortingSelector">Sort by:</label>
+            <select name="options" id="sortingSelector">
+              <option value="0">--Please choose an option--</option>
+              <option value="1">Name</option>
+              <option value="2">Low to high price </option>
+              <option value="3">Rating</option>
+            </select>
+          </div>
+        </div>
+        <div class="productList-container">
+          <div class="productList">
+            <ul></ul>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+          
+        </div>
+      </footer>
+    </div>
+    <script src="hyfBayHelpers.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

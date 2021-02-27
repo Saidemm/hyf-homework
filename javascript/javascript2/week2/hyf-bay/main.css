@@ -1,0 +1,86 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, h2 {
+    margin: 0;
+    padding: 35px;
+}
+
+.body-container{
+    border-radius: 35px;
+    border: solid 1px darkred;
+}
+
+.logo-container{
+    padding-left:35px;
+    width:100%;
+}
+.logo-container img{
+    width:170px;
+}
+
+.menu{
+    display:flex;
+    width: 100%;
+    background-color: darkred;
+}
+.menu-left{
+    padding-left:35px;
+    width: 50%;
+    color:white;
+    font-weight: bold;
+}
+.menu-right{
+    width: 50%;
+}
+
+.formBody {
+    padding-top: 10px;
+    display:flex;
+    width: 100%;
+    background-color: rgb(209, 190, 138);
+}
+.formLeftCol{
+    padding-left: 100px;
+    width: 50%;
+    height: 100px;
+    color:rgb(109, 80, 8);
+}
+.formRightCol{
+    width: 50%;
+    height: 100px;
+    color:rgb(109, 80, 8);
+}
+.productList-container{
+    background-color: rgb(209, 190, 138);
+    padding-left: 50px;
+    padding-right: 50px;
+    width:100%;
+}
+.productList{
+    border: gray 1px solid;
+    height: 400px;
+    overflow: scroll;
+    background-color: white;
+}
+.productList span{
+    font-weight: bold;
+}
+
+.productList li{
+    padding-bottom: 10px;
+}
+
+.footer-container{
+    height:35px;
+    width:100%;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: rgb(209, 190, 138);
+
+}
