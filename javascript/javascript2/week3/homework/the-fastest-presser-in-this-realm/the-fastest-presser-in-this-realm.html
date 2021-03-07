@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="the-fastest-presser-in-this-realm.css" />
+        <link>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="gameBodyContainer">
+            <div class="rowContainer">
+                <div class="gameTitle">
+                    <h1>Faster Presser</h1>
+                </div>
+            </div>
+            <div class="rowContainer rowPaddingBottom">
+                <div>
+                    <lable for="amountOfTime" >Set time:</lable>
+                    <input type="number" id="inputTimeElement" name="amountOfTime">
+                    <button id="startButton">Start game</button>
+                </div>
+                <div class="message" >
+                    <img src="img/red.png" id="messageImageElement"/>
+                    <span id="messageElement"></span>
+                </div>
+            </div>
+            <div class="rowContainer">
+                <div class="sSide">
+                    <canvas id="sCanvas" class="canvasSides"></canvas>
+                    <div id="sElement">
+                        S
+                    </div>
+                    <div id="sCountElement"></div>
+                </div>
+                <div class="lSide">
+                    <canvas id="lCanvas" class="canvasSides"></canvas>
+                    <div id="lElement">
+                        L
+                    </div>
+                    <div id="lCountElement"></div>
+                </div> 
+            </div>
+            <div class="rowContainer">
+                <div class="timer">
+                    00:00
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
+        <script src="the-fastest-presser-in-this-realm.js"></script>
+    </body>
+</html>
