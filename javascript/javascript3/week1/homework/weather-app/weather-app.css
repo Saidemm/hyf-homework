@@ -1,0 +1,143 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+.weatherButton {
+    background-color:rgb(255, 127, 80);
+}
+.locationButton {
+    padding-left: 20px;
+}
+
+.formContainer{
+    display: flex;
+}
+
+.formContent{
+    display: inline-block;
+}
+
+.loadIcon{
+    visibility: hidden;
+    width:20px;
+    height:20px;
+}
+
+.weatherInfoContainer{
+    visibility: hidden;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    width:25%;
+    height: 70%;
+    border-radius: 35px;
+    border: solid 1px lightblue;
+    background-color: lightblue;
+}
+
+.weatherInfoContainer > div{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.weatherInfoContainer > div:nth-child(1){
+    padding-top:20px;
+    height:10%;
+}
+
+.weatherInfoContainer > div:nth-child(2){
+    height:20%;
+}
+
+.weatherInfoContainer > div:nth-child(3){
+    height:10%;
+}
+
+.weatherInfoContainer > div:nth-child(4){
+    height:20%;
+}
+
+.weatherInfoContainer > div:nth-child(5){
+    height:40%;
+    padding-top:10px;
+}
+
+.weatherCity{
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+}
+.weatherTypeIcon{
+    display: inline-block;
+    width:50%;
+    text-align: center;
+}
+.weatherTypeIcon img{
+    width:100%;
+    max-width: 100px;
+}
+.weatherTemp{
+    display: inline-block;
+    width:10%;
+    font-size: 2em;
+    font-weight: bold;
+}
+.weatherWind{
+    display: inline-block;
+    width:10%;
+}
+.weatherWind img{
+    width:100%;
+    max-width: 30px;
+}
+.weatherWindSpeed{
+    font-size: small;
+}
+.weatherCloudy{
+    display: inline-block;
+    width:10%;
+}
+.weatherCloudy img{
+    width:100%;
+    max-width: 30px;
+}
+.weatherCloudyPercentage{
+    font-size: small;
+}
+.weatherSunrise{
+    display: inline-block;
+    width:25%;
+}
+.weatherSunrise img{
+    width: 100%;
+}
+.weatherSunrise div{
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+.weatherSunset{
+    display: inline-block;
+    width:25%;
+}
+.weatherSunset img{
+    width: 100%;
+}
+.weatherSunset div{
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+.weatherMap{
+    display: inline-block;
+    width:70%;
+    height: 100%;
+    border:gray 1px solid;
+}
