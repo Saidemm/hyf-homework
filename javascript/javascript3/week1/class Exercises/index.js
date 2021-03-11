@@ -48,8 +48,11 @@ fetch('https://dog.ceo/api/breeds/list/all')
   .then(breeds => {
     console.log(breeds);
 
+<<<<<<< Updated upstream
    
  
+=======
+>>>>>>> Stashed changes
 
 const dogBreedsArrey = Object.keys(breeds.message);
 console.log(dogBreedsArrey);
