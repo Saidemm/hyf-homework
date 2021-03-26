@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+.body-container{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    border: 1px solid black;
+    background-color:rgb(241, 209, 156);
+    width:400px;
+    justify-content: space-around;
+    font-size: 30px;
+}
