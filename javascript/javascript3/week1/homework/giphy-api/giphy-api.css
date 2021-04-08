@@ -1,0 +1,105 @@
+@font-face {
+    font-family: cursiveFont;
+    src: url(font/petit-formal-script-regular.ttf);
+}
+
+body {
+    font-family: "cursiveFont";
+}
+* {
+    box-sizing: border-box;
+}
+h1{
+    font-size:xx-large;
+    font-weight:bolder;
+    text-align: center;
+    text-shadow: 3px 3px 3px #3e3f3f;
+}
+
+.formContainer{
+    display: flex;
+}
+
+.giphyContainer{
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    width:45%;
+    height: 90%;
+    border-radius: 35px;
+    border: solid 1px rgb(237, 243, 245);
+    background-color: rgb(233, 156, 69);
+}
+
+.giphyContainer > div{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.giphyContainer > div:nth-child(1){
+    padding-top:10px;
+    height:12%;
+}
+
+.giphyContainer > div:nth-child(2){
+    padding-top:10px;
+    height:7%;
+}
+
+.giphyContainer > div:nth-child(3){
+    padding-top:10px;
+    height:7%;
+}
+
+.giphyContainer > div:nth-child(4){
+    padding-top:10px;
+    height:7%;
+}
+
+.giphyContainer > div:nth-child(5){
+    padding:5%;
+    height:67%;
+}
+
+.gifListsContainer{
+    border: gray 1px solid;
+    height: 100%;
+    width : 100%;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.textBox{
+    height: 40px;
+    width : 350px;
+    color: rgb(151, 148, 148);
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px #8f9191;
+}
+
+.searchButton {
+    color: rgb(172, 166, 166);
+    width : 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.imageItemContainer{
+    display: flex;
+    width:100%;
+    border: 2px rgb(250, 244, 244) solid;
+    padding: 5%;
+    text-shadow: 3px 3px 3px #a8a8a8;
+}
+
+.imageItem{
+    width:100%;
+    border: 5px rgb(250, 244, 244) solid;
+   
+}

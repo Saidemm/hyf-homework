@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="weather-app.css" />
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="formContainer">
+        <div class="formContent">
+            <lable for="cityNameElement" >Choose a city name</lable>
+            <input type="text" id="cityNameElement" name="cityNameElement">
+            <button id="weatherButton" class="weatherButton">Get Weather Info</button>
+        </div>
+        <div class="locationButton">
+            <button id="myLocationWeather">Get location Weather</button>
+        </div>
+        <div class="formContent">
+            <img class="loadIcon" src="img/loading.gif">
+        </div>
+        <div id="inputMessage"></div>
+    </div>
+    <div class="weatherInfoContainer">
+        <div>
+            <div id="weatherCityName" class="weatherCity"></div>
+        </div>
+        <div>
+            <div class="weatherTypeIcon">
+                <img id="weatherTypeIcon">
+            </div>
+        </div>
+        <div>
+            <div class="weatherWind">
+                <img src="img/wind.png"  alt="Wind Speed">
+                <div class="weatherWindSpeed">12 m/sec</div>
+            </div>
+            <div class="weatherTemp"></div>
+            <div class="weatherCloudy">
+                <img src="img/cloud.png"  alt="Cloudy Percentage">
+                <div class="weatherCloudyPercentage">10 %</div>
+            </div>
+        </div>
+        <div>
+            <div class="weatherSunrise">
+                <img src="img/sunrise.png"  alt="Sunrise">
+                <div class="weatherSunriseTime"> Sunrise at </div>
+            </div>
+            <div class="weatherSunset">
+                <img src="img/sunset.png"  alt="Sunset">
+                <div class="weatherSunsetTime"> Sunset at </div>
+            </div>
+        </div>
+        <div>
+            <div class="weatherMap"></div>
+        </div>
+    </div>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7duN7J5ZtroMW_wsQsWGRcbh4BWsUbMs"></script>
+    <script src="weather-app.js"></script>    
+</body>
+</html>
