@@ -48,4 +48,4 @@ GROUP BY status.id;
 SELECT status.name
 FROM status JOIN task ON task.status_id=status.id
 GROUP BY status.id
-ORDER BY count(task.id);
+ORDER BY count(task.id) DESC;
