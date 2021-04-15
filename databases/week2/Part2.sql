@@ -20,3 +20,12 @@ CREATE TABLE `student` (
   `class_id` int(10) unsigned NOT NULL,
   CONSTRAINT `fk_class` FOREIGN KEY (`class_id`) REFERENCES `class` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+#Create an index on the name column of the student table.
+CREATE INDEX student_name_idx
+ON student (name);
+
+ALTER TABLE class
+ADD COLUMN status ENUM('not-started', 'ongoing', 'finished');
+
+show index from student;
