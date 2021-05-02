@@ -6,5 +6,24 @@
         "description" : "A nice night out eating delicious indian food",
         "createdAt" : "2019/12/7 14:34",
         "price" : 67
+    },
+
+    {
+        "id" : 2,
+        "title" : "Homemade Potato Gnocchi",
+        "maxNumberOfGuests" : 12,
+        "description" : "A wonderful night out eating delicious italian food",
+        "createdAt" : "2021/02/7 19:34",
+        "price" : 150
+    },
+
+    {
+        "id" : 3,
+        "title" : "Homemade Pasta",
+        "maxNumberOfGuests" : 10,
+        "description" : "Never tasted a super deliciouse food before!",
+        "createdAt" : "2021/02/10 19:34",
+        "price" : 200
     }
+
 ]
