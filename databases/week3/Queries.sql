@@ -53,6 +53,13 @@ SELECT 5, id, now(), 71706024, 'John Dark', 'john.dark@gmail.com'
 FROM meal
 WHERE title = 'Homemade spagetti';
 
+# Alternatively if inserting with a static id
+INSERT INTO reservation (number_of_guests, meal_id, created_date, contact_phonenumber, contact_name, contact_email) 
+VALUES  (2, 16, now(), 71708085, 'Aarika Ellingworth', 'aellingworth0@harvard.edu'),
+		(3, 17, now(), 71706024, 'John Dark', 'john.dark@gmail.com' ),
+		(5, 18, now(), 71708085, 'Aarika Ellingworth', 'aellingworth0@harvard.edu'),
+		(5, 19, now(), 71706024, 'John Dark', 'john.dark@gmail.com' );
+
 # Get a reservation with any id, fx 1
 SELECT *
 FROM reservation
@@ -83,6 +90,12 @@ SELECT 'Simply wow', 'Gnocchi with pesto, ragu or mushroom sauce was unique.', i
 FROM meal
 WHERE title='Homemade Gnocchi';
 
+# Alternatively if inserting with a static id
+INSERT INTO review (title, description,meal_id, stars, created_date)
+VALUES ('deleicious', 'pesto was super fresh', 16, 4, now()),
+		('Good', 'Thegarlic sauce was the best', 17, 4, now()),
+        ('Simply wow', 'Gnocchi with pesto, ragu or mushroom sauce was unique.', 18, 5, now());
+
 # Get all reviews
 SELECT *
 FROM review;
@@ -92,6 +105,10 @@ INSERT INTO review (title, description, meal_id, stars, created_date)
 SELECT 'Best soup ever', 'The taste of soup was rich.', id, 5, now()
 FROM meal
 WHERE title='Authentic Tortellini Soup';
+
+# Alternatively inserting with a static id
+INSERT INTO review (title, description, meal_id, stars, created_date)
+VALUES ('Best soup ever', 'The taste of soup was rich.', 16, 5, now());
 
 # Get a review with any id, fx 1
 SELECT review.*
