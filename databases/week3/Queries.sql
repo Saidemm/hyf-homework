@@ -21,11 +21,11 @@ WHERE title='Homemade Pasta';
 # Update a meal with any id, fx 1. Update any attribute fx the title or multiple attributes
 UPDATE meal
 SET description = 'This is a light and garlicky spaghetti sauce.', location= 'Milan', price=125
-WHERE title LIKE '%spagetti%';
+WHERE id=16;
 
 # Delete a meal with any id, fx 1
 DELETE FROM meal
-WHERE price = 100;
+WHERE id=16;
 
 -- Reservation
 # Get all reservations
@@ -152,7 +152,7 @@ WHERE (created_date BETWEEN '2021-01-12 15:17:08' AND  now());
 # Get only specific number of meals fx return only 5 meals
 SELECT *
 FROM meal
-LIMIT 0,5;
+LIMIT 5;
 
 # Get the meals that have good reviews
 SELECT meal.*
