@@ -131,7 +131,7 @@ FROM meal
 WHERE PRICE < 150;
 
 # Get meals that still has available reservations
-SELECT meal.title, (meal.max_reservations - IFNULL(SUM(reservation.number_of_guests), 0)) AS available_reservations
+SELECT meal.title, (meal.max_reservations - COALESCE(SUM(reservation.number_of_guests), 0)) AS available_reservations
 FROM meal
 LEFT JOIN reservation
 ON meal.id = reservation.meal_id
