@@ -13,7 +13,7 @@ app.get("/numbers/add", (request, response) => {
     const sum = firstNumber + secondNumber;
 
     if (isNaN(sum)) {
-        response.status(404).json({ error: "Input must be number" });
+        response.status(400).json({ error: "Input must be number" });
         return
     } else {
         response.send(`${sum}`);
