@@ -13,7 +13,7 @@ router.get("/:id", (req, res) => {
     try {
         const reviewId = parseInt(req.params.id);
         if(isNaN(reviewId)) {
-            response.status(404).json({error: "Id must be integers."});
+            response.status(400).json({error: "Id must be integers."});
             return;
         }
         const reviewById = reviews.find(review => review.id == reviewId);
@@ -23,7 +23,7 @@ router.get("/:id", (req, res) => {
             res.status(404).json({ error: "Id not found"})
         }
     }  catch (error) {
-        throw error;
+        response.status(500).send({ error: "Internal Server Error." });
     }
 
 })

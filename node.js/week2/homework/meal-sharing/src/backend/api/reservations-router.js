@@ -12,7 +12,7 @@ router.get("/:id", (request, response)=>{
         const reservationId = parseInt(request.params.id);
 
         if(isNaN(reservationId)) {
-            response.status(404).json({error: "Id must be integers."});
+            response.status(400).json({error: "Id must be integers."});
             return;
         }
 
@@ -20,10 +20,10 @@ router.get("/:id", (request, response)=>{
             const reservationById = reservations.filter((reservation) => reservationId == reservation.id);
             response.json(reservationById[0]);
         } else {
-            response.json({});
+            response.status(400).json({ error: "Id is not found!" });
         }
     } catch (error) {
-        throw error;
+        response.status(500).send({ error: "Internal Server Error." });
     }
     
 })
