@@ -29,7 +29,7 @@ app.get("/numbers/multiply/:first/:second", (request, response) => {
     const multiple = firstNumber * secondNumber;
 
     if (isNaN(multiple)) {
-        response.status(404).json({ error: "Input must be number" })
+        response.status(400).json({ error: "Input must be number" })
         return
     } else {
         response.send(`${multiple}`);
