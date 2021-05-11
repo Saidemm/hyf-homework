@@ -9,8 +9,8 @@ if (process.env.NODE_ENV === "test") {
 } else {
   db = knex(config.development)
   // Check that the connection works
-  db.raw("SELECT VERSION()").then(() => {
-    console.log(`connection to knex was successful!`);
+  db.raw("SELECT VERSION()").then((result) => {
+    console.log(`connection to knex was successful! DB version is: ${result[0][0]["VERSION()"]}`);
   });
 }
 

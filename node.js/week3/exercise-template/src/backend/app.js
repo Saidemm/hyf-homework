@@ -1,3 +1,4 @@
+
 const express = require("express");
 const app = express();
 const router = express.Router();
@@ -14,3 +15,12 @@ router.use("/concerts", concertsRouter);
 app.use("/api", router);
 
 module.exports = app;
+
+// const express = require("express");
+// const app = express();
+
+// const concertsRouter = require("./api/concerts");
+
+// app.use("/api/concerts", concertsRouter);
+
+// module.exports = app;
