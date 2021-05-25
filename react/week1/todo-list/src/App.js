@@ -1,5 +1,6 @@
 import './App.css';
-import TodoList from './Todos.jsx'
+import TodoList from './components/TodoList.js';
+
 
 const todoListItems = [
   {
