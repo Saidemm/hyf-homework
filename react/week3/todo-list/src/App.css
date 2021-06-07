@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  padding :10;
+}
+
+
+.App-header {
+  background-color: rgb(212, 119, 119);
+  height: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(66, 61, 61);
+}
+
+
+.Border {
+  border: "3px solid";
+  padding: "40px";
+  color:143, 21, 66;
+  border-radius: 25px;
+}
