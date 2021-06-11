@@ -1,13 +1,12 @@
-import  './components/UserSearcher.jsx'
+import React from 'react';
+import UserSearcherProvider from './components/UserSearcherProvider.jsx'
 import './App.css';
 
-
-const Users = ['Sara', 'Milla', 'Hanieh']
 function App() {
   return (
     <div className="App">
-      <h1>Github </h1>
-      <FetchUsers inputUser={Users} />
+      <h1>Github User Searcher </h1>
+      <UserSearcherProvider />
     </div>
   );
 }
