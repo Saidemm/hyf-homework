@@ -41,7 +41,6 @@ function UserSearcherProvider(){
         }
     }, [inputUser, lastInputUser]);
     
-    if(loading){console.log('loading is: ', loading)}
     
     return (
         <UserContext.Provider value = {{usersList: usersList, inputUser: inputUser, setInputUser: setInputUser, loading: loading, error: error}}>
