@@ -22,9 +22,10 @@ function Todo({ id, todos, setInputValue, removeTodo, deadline, description }) {
     const onUpdate = (id) => {     
         const newTodos = todos.map(todo => {
             if(todo.id === id){
-                todo.description = newDescription;
-            }
+                return {...todo, description: newDescription}
+            } else {
             return todo;
+            }
         });   
         
         setInputValue(newTodos);

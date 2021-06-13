@@ -11,14 +11,11 @@ import moment from 'moment';
 
 
 export default function Todos({ todos, setTodos }) {
-    console.log('todos', todos);
     const [inputValue, setInputValue] = useState("");
     const [deadline, setDeadline] = useState(null);
 
     function getRandomTodo() {
         let randomIndex = Math.floor(Math.random() * todos.length);
-        console.log(randomIndex);
-        console.log('todos', todos);
         return todos[randomIndex];
     }
 
