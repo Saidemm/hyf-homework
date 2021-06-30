@@ -1,8 +1,8 @@
 #Data model
 SET NAMES utf8mb4;
 
-CREATE DATABASE meal_lesson3;
-USE meal_lesson3;
+CREATE DATABASE Meal_Sharing;
+USE Meal_Sharing;
 
 CREATE TABLE `meal` (
 	`id` int(10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,

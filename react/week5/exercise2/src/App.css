@@ -1,0 +1,13 @@
+.outer-container {
+  height: 100%;
+
+}
+
+.inner-container {
+  border: 1px solid #000;
+  padding: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
