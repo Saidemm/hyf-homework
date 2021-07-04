@@ -3,3 +3,5 @@ Broccoli
 Tomatto
 Green beens
 Zuccini
+Red pepper
+Green pepper
